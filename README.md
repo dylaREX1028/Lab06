@@ -13,15 +13,15 @@
 ## Calculadora
 La finalidad de laboratorio es una calculadora básica, en la cual le piden a la persona que ingrese dos valores numéricos y le pregunta también el tipo de operación que quiere aplicar como suma, resta, multiplicación o división. En la consola se imprime la operación y el resultado de este.
 
-`get_user_input():` Esta función solicita al usuario dos números y la operación que desea realizar. Si se introduce una entrada no numérica, atrapa la excepción ValueError y vuelve a pedir la entrada.
+`get_user_input():` Esta función se le solicita al usuario dos números y la operación que desea realizar. Si este digita un valor no numérica, reca en ValueError y vuelve a pedir la entrada.
 
-`ejecutar_operacion(user_input, operations):` Esta función toma la entrada del usuario (números y operación) y un diccionario de operaciones. Verifica si la operación ingresada está en el diccionario y ejecuta la operación correspondiente utilizando funciones lambda almacenadas en el diccionario. Muestra el resultado de la operación.
+`ejecutar_operacion(user_input, operations):` En esta función se toma la entrada el números y operación mediante un diccionario de operaciones. Se verifica si la operación ingresada está en el diccionario y aplica la operación utilizando funciones lambda almacenadas en el diccionario. 
 
-`main():` La función principal del programa. Define un diccionario llamado operations que mapea los símbolos de operación a funciones lambda correspondientes (suma, resta, multiplicación, división). En un bucle infinito, obtiene la entrada del usuario, verifica si la operación es válida y la ejecuta llamando a la `función ejecutar_operacion()`. El bucle continúa hasta que el usuario escribe 'exit' para salir del programa.
+`main():` Esta es la función principal del programa. Se define un diccionario llamado operations que mapea los símbolos de operación a funciones lambda. Mediante un bucle infinito, obtiene la entrada del usuario, verifica si la operación es válida y la ejecuta llamando a la `función ejecutar_operacion()`. El bucle continúa hasta que el usuario escribe 'exit' para salir del programa.
 
-La ejecución principal del programa se encuentra en if __name__ == "__main__":, lo que significa que el código dentro de este bloque se ejecutará si este archivo es el archivo principal que se está ejecutando.
+Finalmente, laa ejecución principal del programa se encuentra en `if __name__ == "__main__":`, lo que significa que el código dentro de este bloque se ejecutará si este archivo es el archivo principal que se está ejecutando.
 
-`<stdio.h>`
+  
 
 
 
