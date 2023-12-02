@@ -1,6 +1,6 @@
 def get_user_input():
     try:
-        # Solicita al usuario dos números y la operación a realizar
+        # Solicita la persona dos números y la operación a realizar
         num1 = float(input("Ingrese un numero: "))
         num2 = float(input("Ingrese otro numero: "))
         operation = input("Elija una operacion (+, -, *, /) o escriba 'exit' para salir: ")
@@ -45,5 +45,6 @@ def main():
         else:
             print("Operacion invalida. Seleccione (+, -, *, /) o escriba 'exit' para salir.")
 
+#Funcion principal de codigo
 if __name__ == "__main__":
     main()
