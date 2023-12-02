@@ -35,17 +35,17 @@ Este se corre con lo siguiente: `python3 calculadora_modi.py`
 ## Callbacks
 La finalidad de código datamanager.py. radica en  la simulación de datos en tiempo real cuando hay actualizaciones en los datos de temperatura y humedad. Se estará usando también el código de que la profesora nos brindó de eventos.py el cual gestiona la suscripción a eventos y notifica a los suscriptores cuando se produce un evento específico. En este caso se va describir el código modificado de datamanager.py.
 
-Clase RealTimeDataManager: Esta clase inicializa un diccionario de datos que representa la temperatura y la humedad. También crea una instancia de EventManager para gestionar la publicación y suscripción a eventos.
+`Clase RealTimeDataManager:` Esta clase inicializa un diccionario de datos que representa la temperatura y la humedad. También crea una instancia de `EventManager` para gestionar la publicación y suscripción a eventos.
 
-Método start_real_time_updates(): Este método ejecuta un bucle infinito que simula actualizaciones de datos en tiempo real. Cada 3 segundos, llama al método generate_real_time_data() para actualizar los valores de temperatura y humedad y luego notifica al EventManager que los datos han cambiado.
+`Método start_real_time_updates():` Se ejecuta un bucle infinito que simula actualizaciones de datos en tiempo real. Cada 3 segundos, llama al método `generate_real_time_data()` para actualizar los valores de temperatura y humedad y luego notifica al `EventManager` que los datos han cambiado.
 
-Método generate_real_time_data(): Este método genera datos aleatorios para simular cambios en la temperatura y la humedad.
+`Método generate_real_time_data():` Se genera datos aleatorios para simular cambios en la temperatura y la humedad.
 
-Creación de instancias y ejecución en segundo plano: Se crea una instancia de RealTimeDataManager y se inicia un hilo (thread) para ejecutar start_real_time_updates() en segundo plano. Esto simula la actualización continua de datos.
+Creación de instancias y ejecución en segundo plano: Se crea una instancia de `RealTimeDataManager` y se inicia un hilo `(thread)` para ejecutar `start_real_time_updates()` en segundo plano. Esto simula la actualización continua de datos.
 
-Callback print_updated_data(data): Se define una función de callback que imprime los datos actualizados al stdout (la consola). Este callback se suscribe al EventManager para el evento "datos_actualizados".
+`Callback print_updated_data(data):` Se define una función de callback que imprime los datos actualizados al `stdout` (la consola). Este callback se suscribe al `EventManager` para el evento `"datos_actualizados"`.
 
-Bucle try-except para mantener el programa en funcionamiento: El programa se mantiene en un bucle infinito (excepto cuando se interrumpe con Ctrl + C) para permitir que los hilos se ejecuten y manejar la interrupción del teclado de manera adecuada.
+Bucle `try-except` para mantener el programa en funcionamiento: El programa se mantiene en un bucle infinito (excepto cuando se interrumpe con Ctrl + C) para permitir que los hilos se ejecuten y manejar la interrupción del teclado de manera adecuada.
 
 
 
