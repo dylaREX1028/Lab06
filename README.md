@@ -1,25 +1,19 @@
 # Lab06
-Lab06deplataformas
+- Universidad de Costa Rica
+- Facultad de Ingeniería
+- Escuela de Ingeniería Eléctrica
+- IE-0117 - Programación Bajo Plataformas Abiertas
+- II ciclo 2023
+- Laboratorio 06: Funciones Lambda y Callbacks Python
+- Participantes:
+  - Dilana Rodríguez Jiménez (Carne C06660)
+- Profesora: Carolina Trejos
+- Fecha: 2 de Diciembre del 2023
 
-### Installation
+## Calculadora
+La finalidad de laboratorio es una calculadora básica, en la cual le piden a la persona que ingrese dos valores numéricos y le pregunta también el tipo de operación que quiere aplicar como suma, resta, multiplicación o división. En la consola se imprime la operación y el resultado de este.
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+`<stdio.h>`
 
 
 
