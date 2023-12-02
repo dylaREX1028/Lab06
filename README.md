@@ -10,6 +10,13 @@
 - Profesora: Carolina Trejos
 - Fecha: 2 de Diciembre del 2023
 
+#### Demostración del código y paquetes de python3
+https://docs.google.com/document/d/17TSKtezFcUdfuH16HlHy4H3ENoS90FVvZUkp7k9rEgQ/edit?usp=sharing
+
+`sudo apt update`
+`sudo apt install python3`
+
+
 ## Calculadora
 La finalidad de laboratorio es una calculadora básica, en la cual le piden a la persona que ingrese dos valores numéricos y le pregunta también el tipo de operación que quiere aplicar como suma, resta, multiplicación o división. En la consola se imprime la operación y el resultado de este.
 
@@ -25,8 +32,7 @@ Finalmente, laa ejecución principal del programa se encuentra en `if __name__ =
 Este se corre con lo siguiente: `python3 calculadora_modi.py`
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+## Callbacks
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
