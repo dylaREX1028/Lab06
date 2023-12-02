@@ -2,7 +2,7 @@ import time
 import random
 import threading
 
-from eventos import EventManager  # Asumiendo que eventos.py está en el mismo directorio
+from eventos import EventManager  
 
 class RealTimeDataManager:
     def __init__(self):
